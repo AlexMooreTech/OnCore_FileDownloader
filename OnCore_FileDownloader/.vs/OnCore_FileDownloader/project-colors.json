@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fc56961f-b9d6-462e-afec-97031630e97c": {
+      "ProjectGuid": "fc56961f-b9d6-462e-afec-97031630e97c",
+      "DisplayName": "OnCore_FileDownloader",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

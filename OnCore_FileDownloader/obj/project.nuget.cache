@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rlv5mdQYelsgyuddBQdaY5OILrbFzFZ2iH/xmBhRTB3Bj1Pc16ld7Nr66gtlscS9f7XT4Y74hCYrdla0fTUMCw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\empor\\source\\repos\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\empor\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\empor\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
