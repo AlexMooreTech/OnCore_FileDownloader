@@ -17,10 +17,9 @@ namespace OnCore_FileDownloader
 
         static void Main(string[] args)
         {
-
+            //init the statemachine and let the change of "states" change program output
             Console.WriteLine("Welcome to the OnCore Test Downloader!");
             StateMachine();
-
         }
 
         public static void StateMachine()
@@ -63,9 +62,7 @@ namespace OnCore_FileDownloader
                     StateMachine();
                     break;
             }
-
         }
-
 
 
         public static void DownloadImage(string imageName)
@@ -74,7 +71,6 @@ namespace OnCore_FileDownloader
             var OAuthHTTP = "https://auth.test.oncoreflex.dev/oauth/token";
             var clientID = "uh6T8hfuxmHvlNnEfpN5MJ8FQkReQKgP";
             var clientSecret = "JvkY5pod2WzFyncW4xwUsvc2Y9ciiV91eeAVxG2xROsy1AkLslfvuoAGY4I_k1lv";
-
 
             try
             {
@@ -86,10 +82,9 @@ namespace OnCore_FileDownloader
 
                 //get the value of the returned token to use for API auth
                 string token = tokenDir.ElementAt(0).Value;
-                //get vlaue of token type
+                //get value of token type
                 string tokenType = tokenDir.ElementAt(3).Value;
-                //Console.WriteLine(token);
-                //Console.WriteLine( token );
+
 
                 //setup a wait for the async request.
                 Console.WriteLine("Getting images using API");
@@ -111,7 +106,6 @@ namespace OnCore_FileDownloader
                 StateMachine();
             }
         }
-
 
 
         //could not find a built-in json deserialiser so I wrote this basic one
@@ -153,15 +147,12 @@ namespace OnCore_FileDownloader
                 }
             }
 
-
             //package into Dictionary
             for (int i = 0; i < ArrayTotal; i += 2)
             {
                 returnDir.Add(DataArray[i], DataArray[i + 1]);
             }
-
             return returnDir;
-
         }
 
 
@@ -191,8 +182,6 @@ namespace OnCore_FileDownloader
 
                 var download = await response.Content.ReadAsStringAsync();
                 return download;
-
-
             }
             catch (Exception ex)
             {
@@ -200,15 +189,12 @@ namespace OnCore_FileDownloader
                 Console.WriteLine(ex.Message);
                 throw;
             }
-
-            
-
         }
+
 
         //get image using token and api path
         static async Task<Stream> HttpGetAsyncImage(string token, string endpoint)
         {
-
             try
             {
                 HttpClient client = new HttpClient();
@@ -218,18 +204,10 @@ namespace OnCore_FileDownloader
                 Console.WriteLine("Connecting to:");
                 Console.WriteLine(client.BaseAddress);
 
-                //Console.WriteLine("Using header as:");
-                //Console.WriteLine(client.DefaultRequestHeaders.Authorization);
-
                 var response = await client.GetAsync(client.BaseAddress);
-                //Console.WriteLine(response);
-
-                
+              
                 var download = await response.Content.ReadAsStreamAsync();
-            
-
                 return download;
-
             }
             catch (Exception ex)
             {
@@ -237,7 +215,6 @@ namespace OnCore_FileDownloader
                 Console.WriteLine(ex.Message);
                 throw;
             }
-
         }
     }
 }

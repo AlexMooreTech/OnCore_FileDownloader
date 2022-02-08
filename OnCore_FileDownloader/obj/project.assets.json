@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\empor\\source\\repos\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader.csproj",
+      "projectUniqueName": "C:\\Users\\empor\\Documents\\GitHub\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader.csproj",
       "projectName": "OnCore_FileDownloader",
-      "projectPath": "C:\\Users\\empor\\source\\repos\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader.csproj",
+      "projectPath": "C:\\Users\\empor\\Documents\\GitHub\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader.csproj",
       "packagesPath": "C:\\Users\\empor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\empor\\source\\repos\\OnCore_FileDownloader\\OnCore_FileDownloader\\obj\\",
+      "outputPath": "C:\\Users\\empor\\Documents\\GitHub\\OnCore_FileDownloader\\OnCore_FileDownloader\\OnCore_FileDownloader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
